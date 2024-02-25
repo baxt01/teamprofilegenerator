@@ -1,0 +1,28 @@
+{
+  "name": "employeeprofilegenerator",
+  "version": "1.0.0",
+  "description": "a series of classes to gather information to build employee profiles into a html page.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baxt01/teamprofilegenerator.git"
+  },
+  "keywords": [
+    "javascript",
+    "classes",
+    "html",
+    "generator"
+  ],
+  "author": "baxt01",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baxt01/teamprofilegenerator/issues"
+  },
+  "homepage": "https://github.com/baxt01/teamprofilegenerator#readme"
+}
