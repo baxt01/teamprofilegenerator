@@ -24,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/baxt01/teamprofilegenerator/issues"
   },
-  "homepage": "https://github.com/baxt01/teamprofilegenerator#readme"
+  "homepage": "https://github.com/baxt01/teamprofilegenerator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.2.15",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
