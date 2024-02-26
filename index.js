@@ -1,6 +1,6 @@
-// const Manager = require("./lib/Manager");
-// const Engineer = require("./lib/Engineer");
-// const Intern = require("./lib/Intern");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -37,15 +37,15 @@ inquirer.prompt([
         type: ' list',
         name: 'role',
         message: 'what role does the employee play in the company',
-        choices: ['manager', 'engineer', 'intern'],
-        default: 'manager'
+        choices: ['Manager', 'Engineer', 'Intern'],
+        default: 'Manager'
     },
     {
         type: 'number',
         name: 'officeNumber',
         message: ' enter your phone number',
       when: function( answers ) {
-        return answers.role === 'manager';
+        return answers.role === 'Manager';
       },
     },
     {
@@ -53,7 +53,7 @@ inquirer.prompt([
         name: 'github',
         message: 'enter your github user name',
         when: function( answers ) {
-            return answers.role === 'engineer';
+            return answers.role === 'Engineer';
         },
     },
     {
@@ -61,11 +61,21 @@ inquirer.prompt([
         name: 'school',
         message: 'what school is attended.',
         when: function( answers ) {
-            return answers.role === 'intern';
+            return answers.role === 'Intern';
         },
     }
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
     console.log(answers);
+    let {name, id, email, role, officeNumber, github, school} = answers;
+    let employee;
+
+    if (role === 'Manager') {
+        employee = new Manager(name, id, email, role, officeNumber);
+    } else if (role === 'Engineer') {
+        employee = new Engineer(name, id, email, role, github);
+    } else if (role === 'Intern') {
+        employee = new Intern(name, id, email, role, school);
+    }
   })
