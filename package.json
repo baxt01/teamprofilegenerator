@@ -27,7 +27,7 @@
   "homepage": "https://github.com/baxt01/teamprofilegenerator#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^9.2.15",
+    "inquirer": "^8.2.6",
     "path": "^0.12.7"
   },
   "devDependencies": {
