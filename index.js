@@ -74,11 +74,11 @@ const gatherEmployeeDetails = () => {
             let employee;
 
             if (role === 'Manager') {
-                employee = new Manager(name, id, email, role, officeNumber);
+                employee = new Manager(name, id, email, officeNumber);
             } else if (role === 'Engineer') {
-                employee = new Engineer(name, id, email, role, github);
+                employee = new Engineer(name, id, email, github);
             } else if (role === 'Intern') {
-                employee = new Intern(name, id, email, role, school);
+                employee = new Intern(name, id, email, school);
             }
 
             team.push(employee);
