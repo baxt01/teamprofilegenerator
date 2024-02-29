@@ -69,5 +69,5 @@ This webpage has been tested using Git Pages [Click here to visit my live  git p
 
 ## Screenshots
 
- ![My Repo](https://github.com/baxt01/baxt01ReadmeGenerator/blob/main/images/repo.png) 
-  ![live pages](https://github.com/baxt01/baxt01ReadmeGenerator/blob/main/images/livepages.png) 
+ ![My Repo](https://github.com/baxt01/teamprofilegenerator/blob/main/images/repo.png) 
+  ![live pages](https://github.com/baxt01/teamprofilegenerator/blob/main/images/livepages.png) 
